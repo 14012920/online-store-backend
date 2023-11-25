@@ -48,7 +48,7 @@ app.use("/api/order", orderRoutes);
 app.use("/api/static", staticContentRoutes);
 
 // Middleware
-app.use(cors({ credentials: false }));
+app.use(cors({origin: `*`}));
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 //port runing
