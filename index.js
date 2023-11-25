@@ -22,7 +22,7 @@ mongoose.connect(
   },
   (err) => {
     if (err) console.log(err);
-    else console.log("mongdb is connected");
+    else console.log("MongoDb is connected");
   }
 );
 
